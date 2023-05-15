@@ -1,10 +1,21 @@
 // mainPage
+import React from 'react';
+
+import {
+	RecoilRoot,
+	atom,
+	selector,
+	useRecoilState,
+	useRecoilValue
+} from 'recoil';
+import SerechMain from 'search/search'
 
 const MainPage = () => {
-	return 
-	<div>
-		<h1> This is Test Page</h1>
-	</div>
+	return (
+		<RecoilRoot>
+			<SerechMain/>		
+		</RecoilRoot>
+	)
 }
 
 export default MainPage;
